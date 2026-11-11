@@ -1,0 +1,14 @@
+# TP6 - Interoperabilidad | Grupo 8 (DiagnosticReport)
+#
+# IMPORTANTE: fhir.resources 6.1.0 esta construido sobre pydantic 1.x. Si se
+# instala con pydantic 2 (que es lo que pip trae por defecto hoy), el import
+# falla con:
+#
+#   ImportError: cannot import name 'ROOT_VALIDATOR_CONFIG_KEY'
+#               from 'pydantic.class_validators'
+#
+# Por eso pydantic queda pineado a 1.x explicitamente.
+
+fhir.resources==6.1.0   # Modelos de los recursos FHIR R4
+pydantic==1.10.13       # Requerido por fhir.resources 6.1.0 (NO usar 2.x)
+requests==2.31.0        # Cliente HTTP para la API REST del servidor FHIR

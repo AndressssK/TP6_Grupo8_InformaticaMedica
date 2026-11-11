@@ -1,0 +1,12 @@
+venv/
+.venv/
+env/
+venv_fhir/
+
+# salidas/ NO se ignora a proposito: los JSON de las respuestas del servidor
+# son la evidencia de la corrida y acompanan al informe.
+__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+.vscode/
